@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="emailTestSuite" verbose = "1">
+
+    <test name="emailTest">
+        <classes>
+            <class name="com.epam.emailtest.EmailTest">
+                <methods>
+                    <include name="accountLoginTest" />
+                    <include name="emailComposeTest" />
+                    <include name="presentInDraftTest" />
+                    <include name="draftEmailFieldsTest" />
+                    <include name="emailSendTest" />
+                    <include name="accountLogoutTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
