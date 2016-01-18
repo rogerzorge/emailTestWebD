@@ -1,5 +1,6 @@
 package com.gmail.pageobject;
 
+import java.lang.String;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,9 +33,9 @@ public class SignInPage extends BasePage {
         PageFactory.initElements(this.driver, this);
     }
 
-    public SignInPage setEmail() {
+    public SignInPage setEmail(String emailValue) {
         emailTextbox.clear();
-        emailTextbox.sendKeys("ivan.mailfortest");
+        emailTextbox.sendKeys(emailValue);
         return this;
     }
 
@@ -43,9 +44,9 @@ public class SignInPage extends BasePage {
         return this;
     }
 
-    public SignInPage setPasswd() {
+    public SignInPage setPasswd(String passwdValue) {
         passwdTextbox.clear();
-        passwdTextbox.sendKeys("Zaq1!Xsw2@");
+        passwdTextbox.sendKeys(passwdValue);
         return this;
     }
 

@@ -17,9 +17,9 @@ public class EmailTestPO extends BaseTestPO {
     public void accountLoginTest() {
 //        signInPage = new SignInPage(driver);
         inboxPage = new InboxPage(driver);
-        signInPage.setEmail();
+        signInPage.setEmail("ivan.mailfortest");
         signInPage.goToPasswPage();
-        signInPage.setPasswd();
+        signInPage.setPasswd("Zaq1!Xsw2@");
         signInPage.goToInboxPage();
         driver.get(InboxPage.HTML_GMAIL_URL);
         assertEquals(inboxPage.getComposeLabel(), "Compose Mail", "Wasn't login (asserted elements are not equal)");
